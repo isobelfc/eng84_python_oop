@@ -25,8 +25,13 @@ class Animal():
         return "keep breathing if you want to live"
 
 # Creating an object of our Animal class
-# cat = Animal()  # this will store all the data available in Animal class into cat
-#
+cat = Animal()  # this will store all the data available in Animal class into cat
+oriental_longhair = Animal()
+
+print(oriental_longhair.breathe())
+oriental_longhair.lungs = False  # POLYMORPHISM used here to override value of lungs
+# print(oriental_longhair.lungs)  # prints False
+
 # print(cat.eat())  # ABSTRACTION of eat() method
 
 # Let's move on to INHERITANCE

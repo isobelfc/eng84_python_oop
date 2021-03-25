@@ -1,4 +1,5 @@
 # Let's import Animal class
+# Best practices are to use a new file for each class to make debugging easier
 
 # "from animal" works because they're in the same project
 # if animal file was elsewhere we would need to give the path
@@ -10,7 +11,7 @@ class Reptile(Animal):  # we need to pass the Animal class as an arg in our Rept
         super().__init__()  # super is to make everything available from parent class
         self.cold_blooded = True
         self.tetrapod = True
-        self.heart_chambers = [3,4]
+        self.heart_chambers = [3, 4]
 
     def hunt(self):
         return "working hard to catch the next meal"

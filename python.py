@@ -7,7 +7,7 @@ class Python(Snake):
         super().__init__()
         self.large = True
         self.two_lungs = True
-        self.venom = False
+        self.venom = False  # polymorphism - overridden from Snake
 
     def climb(self):
         return "up we go"
